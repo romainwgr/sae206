@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Police de caractères et taille de police par défaut */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+  nav a img:hover{
+    opacity:1;
+  }
+  .banniere{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  /* Style de base des liens dans la nav bar */
+  nav li{
+    
+  
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+  }
+  
+  /* Style de base des listes non ordonnées */
+  nav ul {
+    list-style: none;
+    display: flex; /* Alignement horizontal des éléments */
+    gap: 7rem;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  /* Style de base des liens */
+  nav li a {
+    color: black; /* Couleur de police par défaut */
+    transition: all 0.3s ease; /* Transition de tous les changements */
+    
+  }
+  
+  
+  
+  /* Style de l'image de présentation */
+  .imgpresentation {
+    width: 100%;
+    height:100vh;
+    vertical-align: bottom;
+  }
+  
+  /* Définition du style de base pour le lien */
+  
+  nav a {
+    text-decoration: none; /* Supprime tout soulignement du texte */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+  }
+  
+    /* Création d'un élément avant le lien pour simuler le soulignement */
+  
+  nav li a:before {
+    content: ""; /* Ajout de contenu vide */
+    position: absolute; /* Positionnement absolu pour l'élément */
+    width: 100%; /* Largeur de l'élément à 100% */
+    height: 2px; /* Hauteur de l'élément à 2 pixels pour simuler le soulignement */
+    bottom: 0; /* Position en bas de l'élément parent */
+    left: 0; /* Position à gauche de l'élément parent */
+    background-color: black; /* Couleur de fond de l'élément à bleu */
+    visibility: hidden; /* Masque l'élément avant le survol */
+    transform: scaleX(0); /* Ajuste la largeur de l'élément à zéro */
+    transition: all 0.3s ease-in-out; /* Ajoute une transition douce pour tous les styles */
+  }
+  
+  /* Ajout d'un effet de survol pour le soulignement */
+  nav li a:hover:before {
+    visibility: visible; /* Rend l'élément visible au survol */
+    transform: scaleX(1); /* Ajuste la largeur de l'élément à 100% */
+    
+  }
+  
+  .apanyan{
+    width: 60%;
+    opacity:0.8;
+  }
+  
+   nav{
+    display: flex;
+    align-items: center;
+    padding:0 4rem;
+    position: absolute;
+  }
+  
+  
+  
+  .anglais{
+    position: absolute;
+    right:70px;
+    top:20px;
+    width:50px;
+  }
+  
+  .s1 {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  
+  .s2 {
+    grid-column: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  
+  
+  
+  .imgaffiche {
+    max-width: 100%;
+    vertical-align: top;
+    
+  }
+  
+  
+  
+  h2 {
+    color:white;
+  }
+  
+  .global{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .txt {
+    grid-column: 1;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-weight: 100;
+  }
+  
+  .pic {
+    grid-column: 2;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+  
+  
+  .img1 {
+    max-width: 60%;
+    max-height: 100%;
+  }
+  
+  .txt2 {
+    grid-column: 2;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  .pic2 {
+    grid-column: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .img2 {
+    max-width: 50%;
+    max-height: 100%;
+  }
+  
+  .img3 {
+    max-width: 75%;
+    max-height: 100%;
+  }
+  
+  .evenement2023 {
+    width: 100%;
+  }
+  
+  .equipe {
+    width: 100%;
+    
+    vertical-align: bottom;
+  }
+  
+  .icon {
+    grid-column: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .icon2 {
+    grid-column: 2;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .iconimg1 {
+    max-width: 25%;
+    margin: 15px;
+    border-radius: 50%;
+  }
+  
+  .iconimg2 {
+    max-width: 25%;
+    margin: 15px;
+    border-radius: 50%;
+  }
+  
+  .iconimg3 {
+    max-width: 25%;
+    max-height: 75%;
+    margin: 15px;
+    border-radius: 50%;
+  }
+  
+  .iconimg4 {
+    max-width: 25%;
+    max-height: 81%;
+    margin: 15px;
+    border-radius: 50%;
+  }
+  
+  .glo{
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .pp {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald'
+  }
+  
+  .pp2 {
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald'
+  }
+  
+  .body {
+    background-color:#1a1a1a;
+  }

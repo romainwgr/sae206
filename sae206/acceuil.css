@@ -1,0 +1,205 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;    
+  }
+
+  /* Police de caractères et taille de police par défaut */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+  }
+  nav a img:hover{
+    opacity:1;
+  }
+  .banniere{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  /* Style de base des liens dans la nav bar */
+  nav li{
+    
+
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+  }
+  
+  /* Style de base des listes non ordonnées */
+  nav ul {
+    list-style: none;
+    display: flex; /* Alignement horizontal des éléments */
+    gap: 7rem;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  /* Style de base des liens */
+  nav li a {
+    color: black; /* Couleur de police par défaut */
+    transition: all 0.3s ease; /* Transition de tous les changements */
+    
+  }
+  
+  
+  
+  /* Style de l'image de présentation */
+  .imgpresentation {
+    width: 100%;
+    height:100vh;
+    margin-bottom:30px;  
+  }
+  
+  /* Définition du style de base pour le lien */
+  
+ nav a {
+    text-decoration: none; /* Supprime tout soulignement du texte */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+  }
+  
+    /* Création d'un élément avant le lien pour simuler le soulignement */
+  
+  nav li a:before {
+    content: ""; /* Ajout de contenu vide */
+    position: absolute; /* Positionnement absolu pour l'élément */
+    width: 100%; /* Largeur de l'élément à 100% */
+    height: 2px; /* Hauteur de l'élément à 2 pixels pour simuler le soulignement */
+    bottom: 0; /* Position en bas de l'élément parent */
+    left: 0; /* Position à gauche de l'élément parent */
+    background-color: black; /* Couleur de fond de l'élément à bleu */
+    visibility: hidden; /* Masque l'élément avant le survol */
+    transform: scaleX(0); /* Ajuste la largeur de l'élément à zéro */
+    transition: all 0.3s ease-in-out; /* Ajoute une transition douce pour tous les styles */
+  }
+  
+  /* Ajout d'un effet de survol pour le soulignement */
+  nav li a:hover:before {
+    visibility: visible; /* Rend l'élément visible au survol */
+    transform: scaleX(1); /* Ajuste la largeur de l'élément à 100% */
+    
+  }
+  
+  .apanyan{
+    width: 60%;
+    opacity:0.8;
+  }
+  
+   nav{
+    display: flex;
+    align-items: center;
+    padding:0 4rem;
+    position: absolute;
+  }
+  
+  
+  
+  .anglais{
+    position: absolute;
+    right:70px;
+    top:20px;
+    width:50px;
+  }
+  .text{
+    display: flex;
+    justify-content: center;
+    color:black;
+  
+  padding: 5px;
+  }
+  h3{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+  }
+  
+ 
+  .carte{
+    display:flex;
+    justify-content: center;
+    background-color: #f8cc08;
+
+  }
+  
+.affiche{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.footer {
+  background-color: hwb(32 49% 10%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.location {
+  margin-right: 20px;
+}
+
+.opening-hours {
+  font-size: 14px;
+}
+
+.right-section {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.useful-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.useful-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-media ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.extra-info {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.extra-info p {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+.extra-info a {
+  color: #333;
+}
+footer{
+  font-size: 13px;
+}
